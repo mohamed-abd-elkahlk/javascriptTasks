@@ -94,7 +94,9 @@ const listDataWithRangeId = (startId, endId) => {
     return new Error("No data found with the given ID range.");
   }
   filteredData.forEach((obj) => {
-    console.log(`ID: ${obj.id}, Name: ${obj.name}, Age: ${obj.age}`);
+    console.log(
+      `ID: ${obj.id}, First name: ${obj.fname}, Last name: ${obj.lname} , City: ${obj.city} , Age: ${obj.age}`
+    );
   });
 };
 

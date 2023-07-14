@@ -129,10 +129,9 @@ const addTenPeople = () => {
   for (let i = 0; i < 10; i++) {
     const newPerson = {
       id: allData.length + i + 1,
-      name: `Person ${allData.length + i + 1}`,
+      fname: `Person ${allData.length + i + 1}`,
+      lname: `Person ${allData.length + i + 1}`,
       age: Math.floor(Math.random() * 50) + 18,
-      gender: Math.random() < 0.5 ? "Male" : "Female",
-      occupation: occupations[Math.floor(Math.random() * occupations.length)],
       city: cities[Math.floor(Math.random() * cities.length)],
     };
     newPeople.push(newPerson);

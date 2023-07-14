@@ -27,6 +27,7 @@ const {
   listData,
   deletePersonWithRangeId,
   listDataWithRangeId,
+  addTenPeople,
 } = require("./task2");
 yargs.command({
   command: "add",
@@ -144,6 +145,7 @@ yargs.command({
   describe: "add ten person or dumy data",
   handler: () => {
     console.log("data added");
+    addTenPeople();
   },
 });
 console.log(yargs.argv);
